@@ -1,10 +1,11 @@
 ---
-title: Markdown 测试
+title: Hexo-theme-apollo 主题的 Markdown 测试或者说码字教程！？
 date: 2017-04-05 20:10:01
 tags: Markdown  Blog写作
 desc: This is Meta Description test.
 ---
  Markdown是非常棒以及流行的写作语法，平文本，「易读易写」，一般只需几分钟就能学会Markdown的基本用法。本文意在测试apollo模板中的各种Markdown显示效果。本人日常写作环境为MarkEditor，故以MarkEditor官方帮助文档为原本，以原作者GitHub中的参考文档为参考资料，做显示测试。Blog中只能呈现最终效果，原文详见我的Github文档。
+Markdown写作的意义就不想谈了前人总结的够好了<http://www.yangzhiping.com/tech/writing-space.html>
 
 <!--more-->
 
