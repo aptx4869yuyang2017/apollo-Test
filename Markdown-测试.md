@@ -4,9 +4,9 @@ date: 2017-04-05 20:10:01
 tags: Markdown  Blog写作
 desc: This is Meta Description test.
 ---
+ Markdown是非常棒以及流行的写作语法，平文本，「易读易写」，一般只需几分钟就能学会Markdown的基本用法。本文意在测试apollo模板中的各种Markdown显示效果。本人日常写作环境为MarkEditor，故以MarkEditor官方帮助文档为原本，以原作者GitHub中的参考文档为参考资料，做显示测试。Blog中只能呈现最终效果，原文详见我的Github文档。
 
-# Markdown语法
->  Markdown是非常棒以及流行的写作语法，平文本，「易读易写」，一般只需几分钟就能学会Markdown的基本用法。本文意在测试apollo模板中的各种Markdown显示效果。本人日常写作环境为MarkEditor，故以MarkEditor官方帮助文档为原本，以原作者GitHub中的参考文档为参考资料，做显示测试。Blog中只能呈现最终效果，原文详见我的Github文档。
+<!--more-->
 
 ## 加粗 斜体 删除
 **用两个星号标记起来，表示加粗**，*一个星号，表示斜体*，~~这样子表示删除~~，这些就是最基本的语法了。
@@ -66,7 +66,11 @@ desc: This is Meta Description test.
 >  我觉得
 >  你看我时很远
 >  你看云时很近
+
+
+<div class="tip">
 上文引用作者的话使用过。
+</div>
 
 ## 插入链接
 **插入链接:**
@@ -108,6 +112,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam sae
 
 ![https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png](https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png)
 
+<div class="tip">
+第一段我就当摘要用了。
+</div>
+
 ## 评论插件
 
 Hexo-theme-apollo 支持两种评论插件：Disqus 和 Duoshuo. 请在 `theme/_config.yml` 文件中做如下配置:
@@ -115,7 +123,11 @@ Hexo-theme-apollo 支持两种评论插件：Disqus 和 Duoshuo. 请在 `theme/_
 ```yaml
 disqus: seansun
 ```
-**我在文中也开启试试**
+
+<div class="tip">
+开启没成功，以后再研究吧。
+</div>
+
 ## 警告块
 
 使用警告块需要 `div` 标签和 `tip` 类名：
@@ -125,6 +137,14 @@ disqus: seansun
     预处理器很强大，但它只是编写 CSS 的辅助工具。出于对扩展和维护等方面的考虑，在大型项目中有必要使用预处理器构建 CSS；但是对于小型项目，原生的 CSS 可能是一种更好的选择。不要肆意使用预处理器！
 </div>
 ```
-**我在介绍列表的时候用了一下**
+<div class="tip">
+文章中我的分析基本都用警告块了。
+</div>
+
 ![danger](https://cloud.githubusercontent.com/assets/9530963/11359678/489a510c-92b9-11e5-9256-341cef6999b6.png)
+
+## 参考资料
+作者的中文参考文档 <https://github.com/pinggod/hexo-theme-apollo/blob/master/doc/doc-zh.md>
+本文是本主题下的显示效果  ，一般效果和没有渲染的版本请看 <https://github.com/pinggod/hexo-theme-apollo/blob/master/doc/doc-zh.md>
+
 
