@@ -145,6 +145,6 @@ disqus: seansun
 
 ## 参考资料
 作者的中文参考文档 <https://github.com/pinggod/hexo-theme-apollo/blob/master/doc/doc-zh.md>
-本文是本主题下的显示效果  ，一般效果和没有渲染的版本请看 <https://github.com/pinggod/hexo-theme-apollo/blob/master/doc/doc-zh.md>
+本文是本主题下的显示效果  ，一般效果和没有渲染的版本请看 <https://github.com/aptx4869yuyang2017/apollo-Test/blob/master/Markdown-%E6%B5%8B%E8%AF%95.md>
 
 
