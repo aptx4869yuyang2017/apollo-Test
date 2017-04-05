@@ -2,6 +2,7 @@
 title: Markdown 测试
 date: 2017-04-05 20:10:01
 tags: Markdown  Blog写作
+desc: This is Meta Description test.
 ---
 
 # Markdown语法
@@ -20,7 +21,7 @@ tags: Markdown  Blog写作
 分别对应HTML中的`<h1>一级标题</h1>`，以此类推。
 
 
->实际上，Hexo-theme-apollo 只支持两种标题：h1~h3 大标题，h4~h6 小标题，也就是说，# 和 ### 的样式是一样的。之所以这么处理，是因为就个人感觉而言，我们不应该为文章设置过多的层级消耗读者的阅读精力。这相当于强制使用 Hexo-theme-apollo 的用户在写文章时注意文章结构，最多只能使用两层结构。另一个潜在的原因是因为我还没有发现好的样式来处理不同层级的标题，单纯以大小和颜色很容易让页面变得混乱和冗杂。（引自作者说明文档）
+> 实际上，Hexo-theme-apollo 只支持两种标题：h1~h3 大标题，h4~h6 小标题，也就是说，# 和 ### 的样式是一样的。之所以这么处理，是因为就个人感觉而言，我们不应该为文章设置过多的层级消耗读者的阅读精力。这相当于强制使用 Hexo-theme-apollo 的用户在写文章时注意文章结构，最多只能使用两层结构。另一个潜在的原因是因为我还没有发现好的样式来处理不同层级的标题，单纯以大小和颜色很容易让页面变得混乱和冗杂。（引自作者说明文档）
 
 <div class="tip">
   测试效果，一级文档前并没有#，所以实际上还是有三级标题可以使用，配合后文介绍的列表，应该已经可以相对丰富的呈现文章的层次了。
@@ -55,46 +56,6 @@ tags: Markdown  Blog写作
 我也是第一次知道无序列表的 - 和 * 两种 标记。模版中正常显示
 </div>
 
-## 插入链接
-**插入链接:**
-这是一个 [链接 apollo作者的GitHub的参考](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc/doc-zh.md)
-
-**快速链接:**
-只需要在网址头尾用尖括号包裹即可，比如<https://github.com/aptx4869yuyang2017> 
-我的GitHub，欢迎follow👏。
-
-**另外一种插链接的语法:**
-这是一个 [链接][link_key]，然后，在文档的任何一行中(通常在文档末尾比较合适)，对这个链接进行定义，比如: 
-[link_key]: http://the_url.com/ 
-
-**邮箱链接:**
-这是一个 <myname@example.com> 邮箱的链接。
-
-**MarkEditor特别支持:**
-[Google (target=_blank id=google_link)](google.com)  其中内容括号内的`target=_blank id=google_link` 会自动扩展到最终 HTML 对应 A 标签下的属性，另外，`google.com` 作为一个域名，不需要补全`http://`, 最终会自动补全。
-
-## 插入图片
-> 插入图片的语法跟插链接很像，在MarkEditor中，一般可以通过拖拽的方式进行插图，不一定会看到这个语法，而可能直接看到图片本身。
-
-**常见的插图语法:**
-![图片的alt信息，可空)](图片的url)
-
-**另一种插图语法:**
-![alt text][image_id]
-[image_id]: 图片的url
-
-**MarkEditor特别支持:**
-![图片的alt信息，可空)](图片的url)的形式中，如果图片的 url 不是 Web 地址，而是本地的指向，则后面跟上`?r=90&w=100&h=100`，可以设定图片的尺寸。其中 r 表示缩放90%,  w 表示最大宽度 (像素)，h 表示最大高度。r、w、h 并不需要全部进行声明，按需则可。
-如果是图片直接在编辑区域内可见(非 Markdown 语法显示)，则按住 Command 键 (Windows 版为 Ctrl 键)再点击图片，可以直接进行调整。
-
-
-
-## 居中与居右
-单独一行的时候，`[文本内容]`表示居中对齐，`[文本内容]]`表示居右(右侧再多一个`]`)，其它默认情况下都是居左。
-[我是居中的文本]
-[我是居右的文本]]
-
-
 ## 内容引用
 用`>`放在段首，之后是空格，输入文字:
 
@@ -105,13 +66,65 @@ tags: Markdown  Blog写作
 >  我觉得
 >  你看我时很远
 >  你看云时很近
+上文引用作者的话使用过。
+
+## 插入链接
+**插入链接:**
+这是一个 [链接 apollo作者的GitHub的参考](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc/doc-zh.md)
+
+**快速链接:**
+只需要在网址头尾用尖括号包裹即可，比如<https://github.com/aptx4869yuyang2017> 
+我的GitHub，欢迎follow👏。
 
 
 ## 分割线
 **`-`加上空格组成，三个以上:**
 - - - - - -
+本Theme不支持
 
-## 注释
-// 这是 MarkEditor 的特别支持!
-/// 多了一个/，也是注释，但最终注释内容不会出现在源码中。
-注释后的内容，最终会以 HTML 的注释格式`<!--我是内容-->`存在，不会显示在正文中，但包含在 HTML 的源码中；如果是`/// `开头的，则也不包括在源码中。
+# 以下是Hexo-theme-apollo的特别支持的部分  直接全文引用了 
+## Meta Description
+如果你想设置页面的 meta description 信息，请在每篇 markdown 文件的头部添加 desc 字段信息——更实用的方式是在 scaffolds 文件夹中，将 desc 配置到常用模板中去，示例如下：
+```md
+title: Lorem ipsum dolor
+date: 2015-12-31 14:49:13
+desc: Lorem ipsum dolor sit amet, consectetur.
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam saepe ex ut. Deleniti culpa inventore consectetur nam saepe!
+```
+
+生成结果:
+
+```html
+<meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
+```
+
+如果没有配置该信息，Hexo-theme-apollo 会使用 `page.title` 和 `page.author` 来配置该标签。
+
+## 文章摘要
+
+如果你想创建文章摘要用于向读者展示文章的核心内容，那么需要在文章摘要之后其他内容之前添加 HTML 注释标签 `<!--more-->`，使用方法如下图所示：
+
+![https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png](https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png)
+
+## 评论插件
+
+Hexo-theme-apollo 支持两种评论插件：Disqus 和 Duoshuo. 请在 `theme/_config.yml` 文件中做如下配置:
+
+```yaml
+disqus: seansun
+```
+**我在文中也开启试试**
+## 警告块
+
+使用警告块需要 `div` 标签和 `tip` 类名：
+
+```html
+<div class="tip">
+    预处理器很强大，但它只是编写 CSS 的辅助工具。出于对扩展和维护等方面的考虑，在大型项目中有必要使用预处理器构建 CSS；但是对于小型项目，原生的 CSS 可能是一种更好的选择。不要肆意使用预处理器！
+</div>
+```
+**我在介绍列表的时候用了一下**
+![danger](https://cloud.githubusercontent.com/assets/9530963/11359678/489a510c-92b9-11e5-9256-341cef6999b6.png)
+
